@@ -208,7 +208,7 @@ class TitleGeneratorSettingTab extends PluginSettingTab {
         'Pick a preset and click “Use preset” to copy it into your Custom prompt field, then tweak as you like.'
       )
       .addDropdown((dd) => {
-        Object.entries(PROMPT_PRESETS).forEach(([k, v]) => {
+        Object.entries(PROMPT_PRESETS).forEach(([k, v]: [string, { label: string; prompt: string }]) => {
           dd.addOption(k, v.label);
         });
         dd.setValue(this.presetKey);
