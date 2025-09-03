@@ -46,5 +46,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add main.js
-          git commit -m "Auto-build: Update main.js [skip ci]" || exit 0
+          git commit -m "Auto-build: Update main.js [skip ci]" --no-verify || exit 0
           git push
