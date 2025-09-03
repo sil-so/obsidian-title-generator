@@ -282,7 +282,7 @@ export default class TitleGeneratorPlugin extends Plugin {
       const response = await this.openai.completions.create({
         model,
         prompt,
-        max_tokens: 32,
+        max_tokens: 50,
         temperature: 0.6,
       });
       return (response.choices?.[0]?.text ?? '').trim();
@@ -293,7 +293,7 @@ export default class TitleGeneratorPlugin extends Plugin {
       model,
       messages: [{ role: 'user', content: prompt }],
       temperature: 0.6,
-      max_completion_tokens: 32, // Use max_completion_tokens for GPT-5
+      max_completion_tokens: 50, // Use max_completion_tokens for GPT-5
       reasoning_effort: "minimal", // Fast response for simple tasks
       verbosity: "low", // Concise output for titles
       n: 1,
@@ -314,7 +314,7 @@ export default class TitleGeneratorPlugin extends Plugin {
     const body = {
       model,
       input: prompt,
-      max_output_tokens: 32,
+      max_output_tokens: 50,
       temperature: 0.6,
       store: false, // explicitly disable storage by default
     };
