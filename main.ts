@@ -9,6 +9,7 @@ import {
   normalizePath,
   TextAreaComponent,
 } from 'obsidian';
+// Trigger GitHub Actions build
 import OpenAI from 'openai';
 import pMap from 'p-map';
 import path from 'path-browserify';
