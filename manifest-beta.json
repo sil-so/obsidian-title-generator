@@ -3,7 +3,7 @@
   "name": "Title Generator",
   "version": "1.0.3",
   "minAppVersion": "0.15.0",
-  "description": "Quickly and easily title your notes using OpenAI's GPT-3.5",
+  "description": "Title notes using OpenAI or Fireworks AI with your own custom prompt (plus helpful presets).",
   "author": "Jascha Ephraim",
   "authorUrl": "https://jaschaephriam.com",
   "fundingUrl": {
